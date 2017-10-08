@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[Dim3]
+(
+[key3] [int] NOT NULL,
+[attr1] [int] NOT NULL,
+[filler] [binary] (100) NOT NULL CONSTRAINT [DF__Dim3__filler__22AA2996] DEFAULT ((0x))
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Dim3] ADD CONSTRAINT [PK_Dim3] PRIMARY KEY CLUSTERED  ([key3]) ON [PRIMARY]
+GO

@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[Dim2]
+(
+[key2] [int] NOT NULL,
+[attr1] [int] NOT NULL,
+[filler] [binary] (100) NOT NULL CONSTRAINT [DF__Dim2__filler__1FCDBCEB] DEFAULT ((0x))
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Dim2] ADD CONSTRAINT [PK_Dim2] PRIMARY KEY CLUSTERED  ([key2]) ON [PRIMARY]
+GO
